@@ -1,37 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OmniFlow AI Agent No-Code System
 
-## Getting Started
+## 🚀 Overview
+OmniFlow is a powerful no-code AI agent simulation system that enables users to design, execute, and visualize complex workflows with ease. Using a node-based interface, users can create automated workflows for API calls, condition-based logic, event handling, and memory storage without writing a single line of code.
 
-First, run the development server:
+## 🎯 Features
+- **No-Code Workflow Builder** – Drag-and-drop nodes to define AI agent logic.
+- **Dynamic Execution** – Real-time processing of nodes and edges.
+- **API Integration** – Seamless interaction with external services via API calls.
+- **Conditional Logic** – Evaluate expressions dynamically to determine workflow paths.
+- **Event Handling** – Trigger actions based on specific events.
+- **Memory Nodes** – Store and recall data for decision-making.
+- **Visual Debugging** – Monitor execution flow and inspect results interactively.
 
-```bash
+## 🛠 Installation
+To get started with OmniFlow, follow these steps:
+
+```sh
+# Clone the repository
+git clone https://github.com/your-repo/omniflow.git
+
+# Navigate to the project folder
+cd omniflow
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Usage
+1. **Launch the application** and access the visual workflow editor.
+2. **Drag and drop nodes** (Action, Condition, Event, Memory) onto the canvas.
+3. **Connect nodes** using edges to define the execution flow.
+4. **Configure node parameters**, such as API endpoints, expressions, and conditions.
+5. **Run the simulation** and observe real-time execution results.
+6. **Optimize and iterate** on your workflow as needed.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Node Types
+### 1️⃣ Action Node
+Performs API calls with customizable HTTP methods, headers, and request bodies.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2️⃣ Condition Node
+Evaluates expressions dynamically to determine execution paths.
 
-## Learn More
+### 3️⃣ Event Node
+Triggers workflow execution based on predefined conditions.
 
-To learn more about Next.js, take a look at the following resources:
+### 4️⃣ Memory Node
+Stores and retrieves data to maintain state across executions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔗 API Integration
+OmniFlow supports API calls using **fetch()**, allowing seamless integration with external services. Example configuration:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```json
+{
+  "type": "Action",
+  "data": {
+    "method": "POST",
+    "url": "https://api.example.com/data",
+    "headers": { "Authorization": "Bearer token" },
+    "body": { "key": "value" }
+  }
+}
+```
 
-## Deploy on Vercel
+## 🚧 Roadmap
+- [ ] Enhanced UI/UX for workflow creation
+- [ ] Support for custom scripting inside nodes
+- [ ] Database integration for persistent storage
+- [ ] AI-powered node recommendations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m "Add new feature"`.
+4. Push to the branch: `git push origin feature-name`.
+5. Submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# omniflow
+## 📜 License
+This project is licensed under the MIT License. See `LICENSE` for details.
+
+## 🌍 Connect with Us
+- 💬 [Discord](https://discord.gg/your-community)
+- 🐦 [Twitter](https://twitter.com/your-handle)
+- 📺 [YouTube](https://youtube.com/your-channel)
+
+Happy Coding! 🚀
+
